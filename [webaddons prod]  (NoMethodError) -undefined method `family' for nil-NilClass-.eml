@@ -1,0 +1,159 @@
+Received: from BYAPR05MB5895.namprd05.prod.outlook.com (2603:10b6:a03:cb::32)
+ by MN2PR05MB6848.namprd05.prod.outlook.com with HTTPS; Wed, 15 Feb 2023
+ 15:44:23 +0000
+Received: from MW4PR04CA0226.namprd04.prod.outlook.com (2603:10b6:303:87::21)
+ by BYAPR05MB5895.namprd05.prod.outlook.com (2603:10b6:a03:cb::32) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6086.24; Wed, 15 Feb
+ 2023 15:44:19 +0000
+Received: from MW2NAM12FT025.eop-nam12.prod.protection.outlook.com
+ (2603:10b6:303:87:cafe::5b) by MW4PR04CA0226.outlook.office365.com
+ (2603:10b6:303:87::21) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6086.26 via Frontend
+ Transport; Wed, 15 Feb 2023 15:44:19 +0000
+Authentication-Results: spf=pass (sender IP is 144.212.100.42)
+ smtp.mailfrom=mathworks.com; dkim=none (message not signed)
+ header.d=none;dmarc=pass action=none header.from=mathworks.com;
+Received-SPF: Pass (protection.outlook.com: domain of mathworks.com designates
+ 144.212.100.42 as permitted sender) receiver=protection.outlook.com;
+ client-ip=144.212.100.42; helo=exedge.mathworks.com; pr=C
+Received: from exedge.mathworks.com (144.212.100.42) by
+ MW2NAM12FT025.mail.protection.outlook.com (10.13.180.92) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6134.6 via Frontend Transport; Wed, 15 Feb 2023 15:44:18 +0000
+Received: from ex16-01-ah.mathworks.com (172.31.80.219) by
+ ex16edge-00-ah.mathworks.com (172.31.187.33) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2507.6; Wed, 15 Feb 2023 10:43:18 -0500
+Received: from ex16-00-ah.mathworks.com (172.31.39.22) by
+ ex16-01-ah.mathworks.com (172.31.80.219) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2507.17; Wed, 15 Feb 2023 10:44:12 -0500
+Received: from mailhub-00-ah.mathworks.com (172.31.39.111) by
+ ex16-00-ah.mathworks.com (172.31.39.22) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2507.17 via Frontend Transport; Wed, 15 Feb 2023 10:44:12 -0500
+Received: from ruby26cron-00-ah.mathworks.com (ruby26cron-00-ah.mathworks.com [172.31.72.208])
+	by mailhub-00-ah.mathworks.com (8.14.4/8.14.4) with ESMTP id 31FFiCma019120
+	for <addons-exceptions@mathworks.com>; Wed, 15 Feb 2023 10:44:12 -0500
+Received: from www.mathworks.com (localhost [127.0.0.1])
+	by ruby26cron-00-ah.mathworks.com (Postfix) with ESMTP id CDC6A166BC
+	for <addons-exceptions@mathworks.com>; Wed, 15 Feb 2023 10:44:12 -0500 (EST)
+Date: Wed, 15 Feb 2023 10:44:12 -0500
+From: <notifier-monitor-prod@mathworks.com>
+To: <addons-exceptions@mathworks.com>
+Message-ID: <63ecfdccb9c20_52ef2add28d89994164da@ruby26cron-00-ah.mail>
+Subject: [webaddons prod]  (NoMethodError) "undefined method `family' for
+ nil:NilClass"
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+Return-Path: notifier-monitor-prod@mathworks.com
+X-OrganizationHeadersPreserved: ex16-01-ah.mathworks.com
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Feb 2023 15:44:19.1198
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 652f7fcf-889f-4df8-53ca-08db0f6b8048
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-AuthSource: ex16-00-ah.mathworks.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 10
+X-CrossPremisesHeadersPromoted:
+ MW2NAM12FT025.eop-nam12.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ MW2NAM12FT025.eop-nam12.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: MW2NAM12FT025:EE_|BYAPR05MB5895:EE_
+X-OriginatorOrg: mathworks.com
+X-MS-Office365-Filtering-Correlation-Id: 652f7fcf-889f-4df8-53ca-08db0f6b8048
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.212.100.42;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:exedge.mathworks.com;PTR:airwatch-dmz-ah.mathworks.com;CAT:NONE;SFS:;DIR:INB;
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Feb 2023 15:44:18.8698
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 652f7fcf-889f-4df8-53ca-08db0f6b8048
+X-MS-Exchange-CrossTenant-Id: 99dd3a11-4348-4468-9bdd-e5072b1dc1e6
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=99dd3a11-4348-4468-9bdd-e5072b1dc1e6;Ip=[144.212.100.42];Helo=[exedge.mathworks.com]
+X-MS-Exchange-CrossTenant-AuthSource: ex16-00-ah.mathworks.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR05MB5895
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.6389053
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6086.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;auth:0;dest:C;OFR:CustomRules;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	AgjbMgzH3EWN9f2ZRuEMQVJHwO8x6KKWXUUvEyBe6XLC7UfVfBZAwDn8SSwJPY4q491DxhFuQoieQMARcOAYqbTK/fSQ/SKWtdotPx1T1lsirlev5ONHeJUDSuJzvdJ0h3cxRYdYUHijM3gedoQ9wopUVFNWrOkih2xNIMqxEGvsTX1e/v2oCBHtf5UzwKt/skTHm57Wgt0nb3xpPCBOv1eZmw3d5dRsMYzCp08upC4nocy/wJ/iDAqHpMCaBnQAkZBfUqei1L0oLrvHMQhtQa92Pf2ZODA0CSgrkz1DuOmjby+skPMulsE6dOaxRcdSwncd2YjLt+vv4FD4UlXCKIu9qI3m3zdJYUYvRgWXGe4T6yeQbATOU23y8ybNkJgQ854/xAfhvhtfKBpTTDHGjgLMPwWh+367Ump3uCylWG7WHUoESsr65p4hjXli3Ww5e5OKZ7o1gHA0Vw0cercvSg4M1JkiBVK8YicjIn/Dq0vvh8qQItNyeMf9I54+Oss4eftmDwqu2qd3mrLAGUKoicbd5IQMR5w5b195ITdpiV0YtOT7GgcIqjSKgVTTre06MTJsF0Q+6Kw7jIwnddDXOZm2URZok490CoX6XXSWKZfjV+rUr5ebTbBcqRsdQPS2OG9/JixZpL7jUmV7HHG0R1ZEO1i+xVUcZEvwctt28juQ6GTefFG8kkuBdMwxqBTQ0P5f7+ywmDzB0G+yOoOVhrQ+QWOKI979YG4pffJYAfvsBtMH+GGJ+dg1oyEDSVhxezvLdveBT6xS1TKn+uU4NFR5gbvmgl/6u226R+CKUqQ=
+MIME-Version: 1.0
+
+A NoMethodError occurred in background at 2023-02-15 15:44:12 UTC :
+
+  undefined method `family' for nil:NilClass
+  repo_name: Silver-Fang/Image5D; version_uuid: ba702021-e523-40a2-8923-74c8e56207f3
+
+-------------------------------
+Backtrace:
+-------------------------------
+
+  repo_name: Silver-Fang/Image5D; version_uuid: ba702021-e523-40a2-8923-74c8e56207f3
+  /local/ruby/webaddons/lib/github/parameter_builder.rb:29:in `to_h'
+  /local/ruby/webaddons/lib/github/publish_version_from_release.rb:90:in `params'
+  /local/ruby/webaddons/lib/github/publish_version_from_release.rb:82:in `publish_submission'
+  /local/ruby/webaddons/lib/github/publish_version_from_release.rb:41:in `execute'
+  /local/ruby/webaddons/lib/github/publish_version_from_release.rb:19:in `execute'
+  /local/ruby/webaddons/lib/tasks/github_releases.rake:31:in `block (4 levels) in <top (required)>'
+  /local/ruby/webaddons/lib/tasks/github_releases.rake:20:in `each'
+  /local/ruby/webaddons/lib/tasks/github_releases.rake:20:in `block (3 levels) in <top (required)>'
+  /opt/ruby/gems/gems/activerecord-6.1.6.1/lib/active_record/relation/batches.rb:138:in `block in find_in_batches'
+  /opt/ruby/gems/gems/activerecord-6.1.6.1/lib/active_record/relation/batches.rb:245:in `block in in_batches'
+  /opt/ruby/gems/gems/activerecord-6.1.6.1/lib/active_record/relation/batches.rb:229:in `loop'
+  /opt/ruby/gems/gems/activerecord-6.1.6.1/lib/active_record/relation/batches.rb:229:in `in_batches'
+  /opt/ruby/gems/gems/activerecord-6.1.6.1/lib/active_record/relation/batches.rb:137:in `find_in_batches'
+  /local/ruby/webaddons/lib/tasks/github_releases.rake:19:in `block (2 levels) in <top (required)>'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/task.rb:281:in `block in execute'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/task.rb:281:in `each'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/task.rb:281:in `execute'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/task.rb:219:in `block in invoke_with_call_chain'
+  /usr/local/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/task.rb:199:in `invoke_with_call_chain'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/task.rb:188:in `invoke'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/application.rb:160:in `invoke_task'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/application.rb:116:in `block (2 levels) in top_level'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/application.rb:116:in `each'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/application.rb:116:in `block in top_level'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/application.rb:125:in `run_with_threads'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/application.rb:110:in `top_level'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/application.rb:83:in `block in run'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/application.rb:186:in `standard_exception_handling'
+  /opt/ruby/gems/gems/rake-13.0.6/lib/rake/application.rb:80:in `run'
+  /opt/ruby/gems/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+  /opt/ruby/gems/bin/rake:23:in `load'
+  /opt/ruby/gems/bin/rake:23:in `<top (required)>'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/cli/exec.rb:74:in `load'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/cli/exec.rb:74:in `kernel_load'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/cli/exec.rb:28:in `run'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/cli.rb:465:in `exec'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/cli.rb:27:in `dispatch'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/cli.rb:18:in `start'
+  /opt/ruby/gems/gems/bundler-2.0.2/exe/bundle:30:in `block in <top (required)>'
+  /opt/ruby/gems/gems/bundler-2.0.2/lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+  /opt/ruby/gems/gems/bundler-2.0.2/exe/bundle:22:in `<top (required)>'
+  /opt/ruby/gems/bin/bundle:23:in `load'
+  /opt/ruby/gems/bin/bundle:23:in `<main>'
+
+-------------------------------
+Data:
+-------------------------------
+
+  * data: {}
+
+
