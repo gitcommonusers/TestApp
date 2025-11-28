@@ -20,7 +20,7 @@ View on File Exchange: [![View Tracked Vehicle Model with Simscape™ on File Ex
 You can also open in MATLAB Online: [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=simscape/Tracked-Vehicles-Simscape&project=Tracked_Vehicle_Simscape.prj)
  
 ## **Tracked Vehicle Animation Clip**
-![](Scripts_Data/Overview/Tracked_Vehicle_Simscape_Overview_Animation.gif)
+![](Images/Tracked_Vehicle_Simscape_Overview_Animation.gif)
  
 [![View Tracked Vehicle Model with Simscape™ on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/134861-tracked-vehicle-model-with-simscape)
  
@@ -28,7 +28,7 @@ You can also open in MATLAB Online: [![Open in MATLAB Online](https://www.mathwo
 Use the model that best suits your needs.  This repository contains abstract,
 fast running models and detailed models that model each segment individually.
  
-![](Scripts_Data/Overview/Tracked_Vehicle_Simscape_Overview.png)
+![](Images/Tracked_Vehicle_Simscape_Overview.png)
  
 ## **Model of Segmented Track on Uneven Terrain**
 ![](Models/Excavator_Tracks/Overview/html/sm_excv_track2_ptcld_01.png)
