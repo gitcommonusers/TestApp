@@ -31,13 +31,13 @@ fast running models and detailed models that model each segment individually.
 ![](Images/Tracked_Vehicle_Simscape_Overview.png)
  
 ## **Model of Segmented Track on Uneven Terrain**
-![](Models/Excavator_Tracks/Overview/html/sm_excv_track2_ptcld_01.png)
+![](Images/sm_excv_track2_ptcld_01.png)
  
 ## **Track and Undercarriage**
-![](Models/Excavator_Tracks/Overview/html/sm_excv_track2_ptcld_02.png)
+![](Images/sm_excv_track2_ptcld_02.png)
  
 ## **Track Assembly**
-![](Models/Excavator_Tracks/Overview/html/sm_excv_track2_ptcld_04.png)
+![](Images/sm_excv_track2_ptcld_04.png)
  
 ## **Model of Tracked Vehicle Modeled using Rollers on Uneven Terrain**
 ![](Models/Excavator_Tracks/Overview/html/sm_excv_track2_roller_ptcld_Overview.png)
