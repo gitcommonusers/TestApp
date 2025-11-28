@@ -48,10 +48,10 @@ fast running models and detailed models that model each segment individually.
 ![](Images/sm_excv_track2_roller_ptcld_02.png)
  
 ## **Model of Segmented Belts on Uneven Terrain**
-![](Models/Tractor_Tracks/Overview/html/sm_trackV_belt4_IdlerArm_i2u0r3_ptcld_terrain_Overview.png)
+![](Images/sm_trackV_belt4_IdlerArm_i2u0r3_ptcld_terrain_Overview.png)
  
 ## **Track and Undercarriage**
-![](Models/Tractor_Tracks/Overview/html/sm_trackV_belt2_IdlerArm_i2u0r3_ptcld_02.png)
+![](Images/sm_trackV_belt2_IdlerArm_i2u0r3_ptcld_02.png)
  
  
 To learn more about modeling and simulation with Simscape, please visit:
