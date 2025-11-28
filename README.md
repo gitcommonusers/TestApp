@@ -40,12 +40,12 @@ fast running models and detailed models that model each segment individually.
 ![](Images/sm_excv_track2_ptcld_04.png)
  
 ## **Model of Tracked Vehicle Modeled using Rollers on Uneven Terrain**
-![](Models/Excavator_Tracks/Overview/html/sm_excv_track2_roller_ptcld_Overview.png)
+![](Images/sm_excv_track2_roller_ptcld_Overview.png)
  
-![](Models/Excavator_Tracks/Overview/html/sm_excv_track2_roller_ptcld_01.png)
+![](Images/sm_excv_track2_roller_ptcld_01.png)
  
 ## **Track and Undercarriage**
-![](Models/Excavator_Tracks/Overview/html/sm_excv_track2_roller_ptcld_02.png)
+![](Images/sm_excv_track2_roller_ptcld_02.png)
  
 ## **Model of Segmented Belts on Uneven Terrain**
 ![](Models/Tractor_Tracks/Overview/html/sm_trackV_belt4_IdlerArm_i2u0r3_ptcld_terrain_Overview.png)
